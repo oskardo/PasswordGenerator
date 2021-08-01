@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script
+            src="https://kit.fontawesome.com/d650135998.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Password Generator&nbsp;<i class="fas fa-lock"></i></h2>
+            <div class="result-container">
+                <span id="result"></span>
+                <button class="btn" id="clipboard">
+                    <i class="far fa-clipboard"></i>
+                </button>
+            </div>
+            <span class="setting-cog">
+                <label
+                    ><i class="fas fa-unlock-alt"></i>&nbsp;Password
+                    Settings&nbsp;<i class="fas fa-cog"></i
+                ></label>
+            </span>
+            <div class="settings">
+                <div class="setting">
+                    <label>Password length</label>
+                    <select id="length">
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+                <div class="setting">
+                    <label>Include uppercase letters</label>
+                    <input type="checkbox" id="uppercase" checked />
+                </div>
+                <div class="setting">
+                    <label>Include lowercase letters</label>
+                    <input type="checkbox" id="lowercase" checked />
+                </div>
+                <div class="setting">
+                    <label>Include numbers</label>
+                    <input type="checkbox" id="numbers" checked />
+                </div>
+                <div class="setting">
+                    <label>Include symbols</label>
+                    <input type="checkbox" id="symbols" checked />
+                </div>
+            </div>
+            <button class="btn btn-large" id="generate">
+                Generate password&nbsp;<i class="fas fa-check"></i>
+            </button>
+        </div>
+        <a href="https://github.com/oskardo" target="blank_"
+            ><button class="floating-btn">
+                GitHub&nbsp;<i class="fab fa-github"></i></button
+        ></a>
+        <div class="floating-text">Password Generator</div>
+    </body>
+</html>
+
+<script src="main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
